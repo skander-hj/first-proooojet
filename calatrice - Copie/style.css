@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: linear-gradient(to bottom , blueviolet , blue );
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calulatrice{
+    display: flex;
+    flex-direction: column;
+}
+.ecran{
+    height: 100px;
+    background-color: aqua;
+}
+.touches{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(5,50px);
+}
+.boutton[data-key="13"]
+{
+    grid-column: span 2;
+}
